@@ -1,0 +1,207 @@
+ f = @(x) 3*x^3+x^2-x-5
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)3*x^3+x^2-x-5
+
+bisect_class1(f,-3,3,0.00005,100)
+[Warning: Function behaves unexpectedly on array inputs. To improve
+performance, properly vectorize your function to return an output with
+the same size and shape as the input arguments.] 
+[> In matlab.graphics.function.FunctionLine>getFunction
+In matlab.graphics.function/FunctionLine/updateFunction
+In matlab.graphics.function/FunctionLine/set.Function_I
+In matlab.graphics.function/FunctionLine/set.Function
+In matlab.graphics.function.FunctionLine
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>singleFplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 245)" style="font-weight:bold">fplot>singleFplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',245,0)">line 245</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>@(f)singleFplot(cax,{f},limits,extraOpts,args)', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 200)" style="font-weight:bold">fplot>@(f)singleFplot(cax,{f},limits,extraOpts,args)</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',200,0)">line 200</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>vectorizeFplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 200)" style="font-weight:bold">fplot>vectorizeFplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',200,0)">line 200</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 166)" style="font-weight:bold">fplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',166,0)">line 166</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bisect_class1', 'C:\Users\Frank Rawlings\Documents\MATH 408\bisect_class1.m', 14)" style="font-weight:bold">bisect_class1</a> (<a href="matlab: opentoline('C:\Users\Frank Rawlings\Documents\MATH 408\bisect_class1.m',14,0)">line 14</a>)] 
+
+eval                    x          f(x)
+----    -----------------   -----------
+                       -3           -74
+                        3            82
+   0                    0            -5
+   1                  1.5         5.875
+   2                 0.75      -3.92188
+   3                1.125     -0.587891
+   4               1.3125       2.19312
+   5              1.21875      0.697418
+   6             1.171875     0.0293922
+   7            1.1484375     -0.285476
+   8           1.16015625     -0.129613
+   9          1.166015625    -0.0505051
+  10         1.1689453125    -0.0106553
+  11        1.17041015625    0.00934372
+  12       1.169677734375  -0.000661983
+  13      1.1700439453125    0.00433932
+  14     1.16986083984375    0.00183828
+  15    1.169769287109375   0.000588053
+  16    1.169723510742188  -3.69895e-05
+
+ans =
+
+    1.1697
+
+
+diary write1.txt
+%CP 1(b)f = @(x) 3*x^3+x^2-x-5
+f= @(x) 3*x^3+x^2-x-5
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)3*x^3+x^2-x-5
+
+bisect_class(f,-3,3,0.00005,100)
+{Unrecognized function or variable 'bisect_class'.
+} 
+bisect_class1(f,-3,3,0.00005,100)
+[Warning: Function behaves unexpectedly on array inputs. To improve
+performance, properly vectorize your function to return an output with
+the same size and shape as the input arguments.] 
+[> In matlab.graphics.function.FunctionLine>getFunction
+In matlab.graphics.function/FunctionLine/updateFunction
+In matlab.graphics.function/FunctionLine/set.Function_I
+In matlab.graphics.function/FunctionLine/set.Function
+In matlab.graphics.function.FunctionLine
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>singleFplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 245)" style="font-weight:bold">fplot>singleFplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',245,0)">line 245</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>@(f)singleFplot(cax,{f},limits,extraOpts,args)', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 200)" style="font-weight:bold">fplot>@(f)singleFplot(cax,{f},limits,extraOpts,args)</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',200,0)">line 200</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>vectorizeFplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 200)" style="font-weight:bold">fplot>vectorizeFplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',200,0)">line 200</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 166)" style="font-weight:bold">fplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',166,0)">line 166</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bisect_class1', 'C:\Users\Frank Rawlings\Documents\MATH 408\bisect_class1.m', 14)" style="font-weight:bold">bisect_class1</a> (<a href="matlab: opentoline('C:\Users\Frank Rawlings\Documents\MATH 408\bisect_class1.m',14,0)">line 14</a>)] 
+
+eval                    x          f(x)
+----    -----------------   -----------
+                       -3           -74
+                        3            82
+   0                    0            -5
+   1                  1.5         5.875
+   2                 0.75      -3.92188
+   3                1.125     -0.587891
+   4               1.3125       2.19312
+   5              1.21875      0.697418
+   6             1.171875     0.0293922
+   7            1.1484375     -0.285476
+   8           1.16015625     -0.129613
+   9          1.166015625    -0.0505051
+  10         1.1689453125    -0.0106553
+  11        1.17041015625    0.00934372
+  12       1.169677734375  -0.000661983
+  13      1.1700439453125    0.00433932
+  14     1.16986083984375    0.00183828
+  15    1.169769287109375   0.000588053
+  16    1.169723510742188  -3.69895e-05
+
+ans =
+
+    1.1697
+
+%cp 3(c)
+f = @(x) 1+5*x-6*x.^3-exp(2*x)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1+5*x-6*x.^3-exp(2*x)
+
+bisect_class1(f,-1,0,5e-7,100)
+
+eval                    x          f(x)
+----    -----------------   -----------
+                       -1       1.86466
+                        0             0
+   0                 -0.5      -1.11788
+   1                -0.75      -0.44188
+   2               -0.875      0.470757
+   3              -0.8125      -0.04115
+   4             -0.84375      0.200334
+   5            -0.828125     0.0760458
+   6           -0.8203125     0.0165703
+   7          -0.81640625    -0.0125081
+   8         -0.818359375    0.00197643
+   9        -0.8173828125   -0.00527948
+  10       -0.81787109375   -0.00165494
+  11      -0.818115234375   0.000159889
+  12     -0.8179931640625   -0.00074774
+  13    -0.81805419921875  -0.000293979
+  14   -0.818084716796875  -6.70583e-05
+  15   -0.8180999755859375   4.64121e-05
+  16   -0.8180923461914062  -1.03239e-05
+  17   -0.8180961608886719   1.80439e-05
+  18   -0.8180942535400391   3.85995e-06
+  19   -0.8180932998657227  -3.23199e-06
+  20   -0.8180937767028809   3.13979e-07
+
+ans =
+
+   -0.8181
+
+%cp 5(b)
+f = @(x) x^3-3
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)x^3-3
+
+bisect_class1(f,1,2,5e-9,100)
+[Warning: Function behaves unexpectedly on array inputs. To improve
+performance, properly vectorize your function to return an output with
+the same size and shape as the input arguments.] 
+[> In matlab.graphics.function.FunctionLine>getFunction
+In matlab.graphics.function/FunctionLine/updateFunction
+In matlab.graphics.function/FunctionLine/set.Function_I
+In matlab.graphics.function/FunctionLine/set.Function
+In matlab.graphics.function.FunctionLine
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>singleFplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 245)" style="font-weight:bold">fplot>singleFplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',245,0)">line 245</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>@(f)singleFplot(cax,{f},limits,extraOpts,args)', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 200)" style="font-weight:bold">fplot>@(f)singleFplot(cax,{f},limits,extraOpts,args)</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',200,0)">line 200</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot>vectorizeFplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 200)" style="font-weight:bold">fplot>vectorizeFplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',200,0)">line 200</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot', 'C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m', 166)" style="font-weight:bold">fplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022a\toolbox\matlab\graphics\function\fplot.m',166,0)">line 166</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bisect_class1', 'C:\Users\Frank Rawlings\Documents\MATH 408\bisect_class1.m', 14)" style="font-weight:bold">bisect_class1</a> (<a href="matlab: opentoline('C:\Users\Frank Rawlings\Documents\MATH 408\bisect_class1.m',14,0)">line 14</a>)] 
+
+eval                    x          f(x)
+----    -----------------   -----------
+                        1            -2
+                        2             5
+   0                  1.5         0.375
+   1                 1.25      -1.04688
+   2                1.375     -0.400391
+   3               1.4375     -0.029541
+   4              1.46875      0.168427
+   5             1.453125     0.0683784
+   6            1.4453125     0.0191541
+   7           1.44140625   -0.00525945
+   8          1.443359375    0.00693079
+   9         1.4423828125   0.000831542
+  10        1.44189453125   -0.00221499
+  11       1.442138671875  -0.000691981
+  12      1.4422607421875   6.97159e-05
+  13     1.44219970703125  -0.000311149
+  14    1.442230224609375   -0.00012072
+  15    1.442245483398438  -2.55033e-05
+  16    1.442253112792969   2.21061e-05
+  17    1.442249298095703  -1.69867e-06
+  18    1.442251205444336   1.02037e-05
+  19     1.44225025177002    4.2525e-06
+  20    1.442249774932861   1.27691e-06
+  21    1.442249536514282  -2.10878e-07
+  22    1.442249655723572   5.33018e-07
+  23    1.442249596118927    1.6107e-07
+  24    1.442249566316605  -2.49036e-08
+  25    1.442249581217766   6.80834e-08
+  26    1.442249573767185   2.15899e-08
+  27    1.442249570041895  -1.65687e-09
+
+ans =
+
+    1.4422
+
+diary off

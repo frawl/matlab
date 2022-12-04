@@ -1,0 +1,22 @@
+format long
+f = @(x)  x/sin(x)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)x/sin(x)
+
+compmidp(f,0,pi/2,16)
+
+ans =
+
+   1.831529931094525
+
+compmidp(f,0,pi/2,32)
+
+ans =
+
+   1.831830810703288
+
+diary off

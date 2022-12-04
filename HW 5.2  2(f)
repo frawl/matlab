@@ -1,0 +1,172 @@
+f = @(x) (x^3)/sqrt(x^4-1);
+f(x)= (x^3)/sqrt(x^4-1);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sym/subsindex', 'C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m', 953)" style="font-weight:bold">sym/subsindex</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m',953,0)">line 953</a>)
+Invalid indexing or function definition. Indexing must follow MATLAB indexing. Function arguments must be symbolic variables, and
+function body must be sym expression.
+} 
+clc
+diary on
+syms x f(x)
+f(x)= (x^3)/sqrt(x^4-1);
+int(f(x),2,3)
+ 
+ans =
+ 
+2*5^(1/2) - 15^(1/2)/2
+ 
+simp1(f(x),2,3,16)
+{Index exceeds the number of array elements. Index must not exceed 1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sym/subsref', 'C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m', 997)" style="font-weight:bold">sym/subsref</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m',997,0)">line 997</a>)
+            R_tilde = builtin('subsref',L_tilde,Idx);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simp1', 'C:\Users\Frank Rawlings\Documents\MATH 408\simp1.m', 5)" style="font-weight:bold">simp1</a> (<a href="matlab: opentoline('C:\Users\Frank Rawlings\Documents\MATH 408\simp1.m',5,0)">line 5</a>)
+I0= f(a)+ f(b);
+} 
+f(x)= (x^3)/sqrt(x^4-1);
+int(f(x),2,3)
+ 
+ans =
+ 
+2*5^(1/2) - 15^(1/2)/2
+ 
+int(f(x),2,3)
+ 
+ans =
+ 
+2*5^(1/2) - 15^(1/2)/2
+ 
+syms x f(x)
+simp1(f(x),2,3,16)
+{Index exceeds the number of array elements. Index must not exceed 1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sym/subsref', 'C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m', 997)" style="font-weight:bold">sym/subsref</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m',997,0)">line 997</a>)
+            R_tilde = builtin('subsref',L_tilde,Idx);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simp1', 'C:\Users\Frank Rawlings\Documents\MATH 408\simp1.m', 5)" style="font-weight:bold">simp1</a> (<a href="matlab: opentoline('C:\Users\Frank Rawlings\Documents\MATH 408\simp1.m',5,0)">line 5</a>)
+I0= f(a)+ f(b);
+} 
+simp(f,2,3,16)
+{Unrecognized function or variable 'simp'.
+} 
+)
+ )
+ ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+simp1(f,2,3,16)
+ 
+ans =
+ 
+f(2)/48 + f(3)/48 + f(5/2)/24 + f(9/4)/24 + f(11/4)/24 + f(17/8)/24 + f(19/8)/24 + f(21/8)/24 + f(23/8)/24 + f(33/16)/12 + f(35/16)/12 + f(37/16)/12 + f(39/16)/12 + f(41/16)/12 + f(43/16)/12 + f(45/16)/12 + f(47/16)/12
+ 
+clc
+f = @(x) (x^3)/sqrt(x^4-1);
+simp1(f,2,3,16)
+
+ans =
+
+   2.535644336225686
+
+f = @(x) (x^3)/sqrt(x^4-1);
+simp1(f,2,3,16)
+
+ans =
+
+   2.535644336225686
+
+clc
+f = @(x) (x^3)/sqrt(x^4-1);
+clc
+f = @(x) (x^3)/sqrt(x^4-1);
+clc
+f = @(x) (x^3)/sqrt((x^4)-1);
+simp1(f,2,3,16)
+
+ans =
+
+   2.535644336225686
+
+simp1(f,2,3,32)
+
+ans =
+
+   2.535644285313085
+
+clc
+f = @(x) (x^3)/sqrt((x^4)-1);
+simp1(f,2,3,16)
+
+ans =
+
+   2.535644336225686
+
+simp1(f,2,3,16)
+
+ans =
+
+   2.535644336225686
+
+simp1(f,3,2,16)
+
+ans =
+
+  -2.535644336225686
+
+clc
+f = @(x) (x^3)/sqrt((x^4)-1);
+simp1(f,2,3,16)
+
+ans =
+
+   2.535644336225686
+
+f = @(x) (x^3)/sqrt((x^4)-1);
+simp1(f,2,3,16)
+
+ans =
+
+   2.641511052353594
+
+diary HW
+f = @(x) (x^3)/sqrt((x^4)-1);
+simp1(f,2,3,32)
+
+ans =
+
+   2.588591578928356
+
+sym x f(x)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sym/assume', 'C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m', 685)" style="font-weight:bold">sym/assume</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m',685,0)">line 685</a>)
+Expected input to match one of these values:
+
+'integer', 'rational', 'real', 'positive', 'clear'
+
+The input, 'f(x)', did not match any of the valid values.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sym', 'C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m', 351)" style="font-weight:bold">sym</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\symbolic\symbolic\@sym\sym.m',351,0)">line 351</a>)
+                    assume(S, n);
+} 
+syms x f(x)
+f(x)= (x^3)/sqrt(x^4-1);
+int(f(x),2,3)
+ 
+ans =
+ 
+2*5^(1/2) - 15^(1/2)/2
+ 
+%Error for m=16
+ 2.641511052353594 - (2*5^(1/2) - 15^(1/2)/2)
+
+ans =
+
+   0.105866770457723
+
+%Error for m= 32
+ 2.588591578928356 - (2*5^(1/2) - 15^(1/2)/2)
+
+ans =
+
+   0.052947297032485
+
+diary off
